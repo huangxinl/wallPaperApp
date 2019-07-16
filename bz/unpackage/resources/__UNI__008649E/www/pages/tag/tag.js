@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"tags { height: ",[0,400],"; }\n",],undefined,{path:"./pages/tag/tag.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/tag/tag.wxml') } }));

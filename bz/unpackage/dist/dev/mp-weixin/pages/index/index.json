@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "壁纸",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "tag": "/pages/tag/tag",
+    "nav-swipper": "/components/jing-swiper"
+  }
+}

@@ -1,0 +1,8 @@
+
+.cu-bar-loadmore {
+	min-height: 100rpx;
+}
+.content {
+	width: 100%;
+}
+

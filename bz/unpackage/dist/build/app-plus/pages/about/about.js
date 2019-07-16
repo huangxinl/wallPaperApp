@@ -1,0 +1,2 @@
+setCssToHead(["body, wx-view { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }\nbody { min-height: 100%; background-color: #FFFFFF; text-align: center; }\n.",[1],"about,.",[1],"version{ font-size: ",[0,25],"; line-height: ",[0,40],"; padding: ",[0,30],"; }\n",],undefined,{path:"./pages/about/about.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/about/about.wxml') } }));

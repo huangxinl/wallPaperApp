@@ -1,0 +1,1 @@
+<view class="about">{{''+List+''}}<view class="version">{{'当前版本：'+version+''}}</view></view>

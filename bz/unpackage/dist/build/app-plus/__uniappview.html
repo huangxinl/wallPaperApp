@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"天天壁纸","entryPagePath":"pages/index/index.html","page":{"pages/index/index.html":{"window":{"navigationBarTitleText":"壁纸","enablePullDownRefresh":true,"usingComponents":{"tag":"/pages/tag/tag","nav-swipper":"/components/jing-swiper"}}},"pages/sort/sort.html":{"window":{"navigationBarTitleText":"专辑","enablePullDownRefresh":true,"usingComponents":{}}},"pages/detail/detail.html":{"window":{"navigationBarTitleText":"详情","navigationBarBackgroundColor":"#FF80AB","backgroundColor":"#000000","bounce":"none","titleNView":{"buttons":[{"type":"share"}]},"usingComponents":{}}},"pages/detail/singledetail.html":{"window":{"navigationBarTitleText":"详情","enablePullDownRefresh":false,"usingComponents":{}}},"pages/detail/detailindex.html":{"window":{"navigationBarTitleText":"详情","enablePullDownRefresh":false,"usingComponents":{}}},"pages/tag/tag.html":{"window":{"navigationBarTitleText":"详情","enablePullDownRefresh":false,"usingComponents":{}}},"pages/list/list.html":{"window":{"navigationBarTitleText":"专题","enablePullDownRefresh":true,"usingComponents":{}}},"pages/center/center.html":{"window":{"navigationBarTitleText":"头像、表情","enablePullDownRefresh":true,"usingComponents":{}}},"pages/login/login.html":{"window":{"navigationBarTitleText":"登录","usingComponents":{}}},"pages/about/about.html":{"window":{"usingComponents":{}}},"pages/centerlist/centerlist.html":{"window":{"usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarTitleText":"看图","navigationBarBackgroundColor":"#FF80AB","backgroundColor":"#EFEFEF"}},"tabBar":{"color":"#444444","selectedColor":"#FF80AB","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/index/index.html","iconPath":"static/index-0.png","selectedIconPath":"static/index-1.png","text":"首页"},{"pagePath":"pages/center/center.html","iconPath":"static/tag-0.png","selectedIconPath":"static/tag-1.png","text":"热门"},{"pagePath":"pages/sort/sort.html","iconPath":"static/center-0.png","selectedIconPath":"static/center-1.png","text":"专辑"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/index/index","pages/sort/sort","pages/detail/detail","pages/detail/singledetail","pages/detail/detailindex","pages/tag/tag","pages/list/list","pages/center/center","pages/login/login","pages/about/about","pages/centerlist/centerlist"],"subPackages":[],"nvueCompiler":"weex","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.1.0","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"tags { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: ",[0,400],"; border-radius: 5px; }\n.",[1],"tag-text { font-size: ",[0,20],"; color: #8799A3; margin-top: ",[0,10],"; }\n.",[1],"tag { }\n",],undefined,{path:"./pages/tag/tag.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/tag/tag.wxml') } }));

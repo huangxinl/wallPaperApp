@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"cu-bar-loadmore { min-height: ",[0,100],"; }\n.",[1],"content { width: 100%; }\n",],undefined,{path:"./pages/center/center.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/center/center.wxml') } }));

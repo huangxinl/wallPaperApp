@@ -1,0 +1,22 @@
+
+.tags {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 400rpx;
+	border-radius: 5px;
+}
+.tag-text {
+	font-size: 20rpx;
+	color: #8799A3;
+	margin-top: 10rpx;
+}
+.tag {
+	/* margin: 0 26upx; */
+}
+.tag-img {
+    -webkit-box-shadow:2px 2px 2px #8799A3;
+            box-shadow:2px 2px 2px #8799A3;
+} 
+
